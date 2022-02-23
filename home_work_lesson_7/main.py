@@ -49,6 +49,8 @@ def perfect_number_check():
 # Ex 3.2
 def perfect_number_list():
     perf_num = int(input("Add amount of perfect numbers you need "))
+    while perf_num > 4:
+        perf_num = int(input("The time needed for the 5-th perfect number exceeds reason, please enter a valur from 1 to 4: "))
     per_num_count = 0
     perf_num_list = list()
     i_num = 1
