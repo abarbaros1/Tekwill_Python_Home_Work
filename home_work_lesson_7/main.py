@@ -39,22 +39,27 @@ def perfect_number_check():
             sum += element
     print(sum == perf_num_check)
 
+# Ex 3.2.0
+def perf_num_check_arg(perf_num):
+    perf_num_check = int(perf_num)
+    sum = 0
+    for element in range(1, perf_num_check):
+        if perf_num_check % element == 0:
+            sum += element
+    return sum == perf_num_check
 
-# Ex 3.2
+
+# Ex 3.2.1
 def perfect_number_list():
     perf_num = int(input("Add amount of numbers to be checked "))
     per_num_count = 0
     perf_num_list = list()
-    i_num = 0
-    while perf_num < len(perf_num_list):
-        if perfect_number_check(i_num):
+    i_num = 1
+    while perf_num > len(perf_num_list):
+        if perf_num_check_arg(i_num):
             perf_num_list.append(i_num)
         i_num += 1
     print(f'Your perfect number list is {perf_num_list}')
-
-
-perfect_number_list()
-
 
 
 # Ex 4 partially done
