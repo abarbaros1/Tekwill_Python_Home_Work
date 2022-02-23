@@ -18,12 +18,13 @@ def palindrome():
 def prime_num():
     my_prime_number = int(input("Add your number here to test if it is prime number"))
     if my_prime_number > 1:
-        for element in range(2, my_prime_number // 2):
+        for element in range(2, my_prime_number):
             if (my_prime_number % element) == 0:
                 print(my_prime_number, "not a prime number")
-            break
-        else:
-            print(my_prime_number, "prime number")
+                break
+            else:
+                print(my_prime_number, "prime number")
+                break
     else:
         print(my_prime_number, "not a prime number")
 
