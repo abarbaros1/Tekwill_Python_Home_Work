@@ -60,19 +60,39 @@ def perfect_number_list():
 
 
 # Ex 4 partially done
-def text_check():
+def words_check():
     import string
-    my_text = input("Add your text here").lower()
-    my_text_new = str()
+    text_input = input("Add yuor text here").lower()
+    text_split = text_input.split()
+
+    text_set = set()
     punctuation_set = set()
-    for element in my_text:
-        if element in string.punctuation:
-            punctuation_set.add(element)
-        else:
-            my_text_new += element
-    my_text_set = set(my_text_new.split())
-    print(f'Punctuation ste {punctuation_set}')
-    print(f'Words set {my_text_set}')
+
+    text_dict = dict()
+    punctuation_dict = dict()
+
+    for element in text_split:
+        if element.isalpha():
+            if element in text_dict:
+                text_dict[element] += 1
+            else:
+                text_dict.update({element: 1})
+                text_set.add(element)
+
+    for simbol in text_input:
+        if simbol in string.punctuation:
+            if simbol in punctuation_dict:
+                punctuation_dict[simbol] += 1
+            else:
+                punctuation_dict.update({simbol: 1})
+                punctuation_set.add(simbol)
+
+    print(f'Set of words used in text {text_set}')
+    print(f'Set of symbols used in text {punctuation_set}')
+    print(f'Count of the most commonly used words {text_dict}')
+    print(f'Count of the most commonly used punctuation{punctuation_dict}')
+
+
 
 if __name__ == '__main__':
     # We can store the functions as values in a dict
@@ -81,7 +101,7 @@ if __name__ == '__main__':
         2: prime_num,
         3: perfect_number_check,
         4: perfect_number_list,
-        5: text_check
+        5: words_check
     }
     print('Type the number of the exercise to test:')
     print('1: Palindrome exercise')
