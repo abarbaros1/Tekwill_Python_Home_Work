@@ -76,21 +76,21 @@ def text_check():
     my_text_set = set(my_text_new.split())
     print(f'Punctuation ste {punctuation_set}')
     print(f'Words set {my_text_set}')
-#
-# if __name__ == '__main__':
-#     # We can store the functions as values in a dict
-#     exercises_map = {
-#         1: palindrome,
-#         2: prime_num,
-#         3: perfect_number_check,
-#         4: perfect_number_list,
-#         5: text_check
-#     }
-#     print('Type the number of the exercise to test:')
-#     print('1: Palindrome exercise')
-#     print('2: Prime number exercise')
-#     print('3: Perfect number check')
-#     print('4: Perfect number list')
-#     print('5: Text words and punctuation')
-#     ex_nr = int(input('Exercise number: '))
-#     exercises_map[ex_nr]()  # Executing the function at the selected number
+
+if __name__ == '__main__':
+    # We can store the functions as values in a dict
+    exercises_map = {
+        1: palindrome,
+        2: prime_num,
+        3: perfect_number_check,
+        4: perfect_number_list,
+        5: text_check
+    }
+    print('Type the number of the exercise to test:')
+    print('1: Palindrome exercise')
+    print('2: Prime number exercise')
+    print('3: Perfect number check')
+    print('4: Perfect number list')
+    print('5: Text words and punctuation')
+    ex_nr = int(input('Exercise number: '))
+    exercises_map[ex_nr]()  # Executing the function at the selected number
