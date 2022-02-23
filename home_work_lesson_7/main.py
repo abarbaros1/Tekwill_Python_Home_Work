@@ -51,7 +51,7 @@ def perf_num_check_arg(perf_num):
 
 # Ex 3.2.1
 def perfect_number_list():
-    perf_num = int(input("Add amount of numbers to be checked "))
+    perf_num = int(input("Add amount of perfect numbers you need "))
     per_num_count = 0
     perf_num_list = list()
     i_num = 1
