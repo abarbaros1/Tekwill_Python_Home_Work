@@ -1,6 +1,6 @@
 
 #Ex 1
-def palindrome():
+def ex1():
     my_string = input("Add your text to check it for palindrome")
     count_var = 0
     my_list = list(my_string.replace(' ',''))
@@ -29,7 +29,7 @@ def ex2():
 
 
 # Ex 3.1
-def perfect_number_check():
+def ex3():
     from Utils.number_utils import perf_num_check_arg
 
     perf_num_check = int(input("Add you number to check if its perfect"))
@@ -38,7 +38,7 @@ def perfect_number_check():
 
 
 # Ex 3.2
-def perfect_number_list():
+def ex4():
     from Utils.number_utils import perf_num_check_arg
 
     perf_num = int(input("Add amount of perfect numbers you need "))
@@ -55,7 +55,7 @@ def perfect_number_list():
 
 
 # Ex 4
-def words_check():
+def ex5():
     import string
     text_input = input("Add yuor text here").lower()
     text_split = text_input.split()
@@ -95,11 +95,11 @@ def words_check():
 if __name__ == '__main__':
     # We can store the functions as values in a dict
     exercises_map = {
-        1: palindrome,
+        1: ex1,
         2: ex2,
-        3: perfect_number_check,
-        4: perfect_number_list,
-        5: words_check
+        3: ex3,
+        4: ex4,
+        5: ex5
     }
     print('Type the number of the exercise to test:')
     print('1: Palindrome exercise')
