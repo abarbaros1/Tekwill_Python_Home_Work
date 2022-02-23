@@ -15,32 +15,23 @@ def palindrome():
 
 
 #Ex 2
-def prime_num():
-    my_prime_number = int(input("Add your number here to test if it is prime number"))
-    if my_prime_number > 1:
-        for element in range(2, my_prime_number):
-            if (my_prime_number % element) == 0:
-                print(my_prime_number, "not a prime number")
-                break
-            else:
-                print(my_prime_number, "prime number")
-                break
+def ex2():
+    from Utils.number_utils import prime_num
+
+    my_number = int(input("Add your number here to test if it is prime number"))
+    if prime_num(my_number):
+        print("prime number")
     else:
-        print(my_prime_number, "not a prime number")
+        print("not a prime number")
 
 
-# Ex 3.0 used for 3.1 and 3.2
-def perf_num_check_arg(perf_num):
-    perf_num_check = int(perf_num)
-    sum = 0
-    for element in range(1, perf_num_check):
-        if perf_num_check % element == 0:
-            sum += element
-    return sum == perf_num_check
+
 
 
 # Ex 3.1
 def perfect_number_check():
+    from Utils.number_utils import perf_num_check_arg
+
     perf_num_check = int(input("Add you number to check if its perfect"))
     perf_num_check_arg(perf_num_check)
     print(perf_num_check_arg(perf_num_check))
@@ -48,6 +39,8 @@ def perfect_number_check():
 
 # Ex 3.2
 def perfect_number_list():
+    from Utils.number_utils import perf_num_check_arg
+
     perf_num = int(input("Add amount of perfect numbers you need "))
     while perf_num > 4:
         perf_num = int(input("The time needed for the 5-th perfect number exceeds reason, please enter a valur from 1 to 4: "))
@@ -103,7 +96,7 @@ if __name__ == '__main__':
     # We can store the functions as values in a dict
     exercises_map = {
         1: palindrome,
-        2: prime_num,
+        2: ex2,
         3: perfect_number_check,
         4: perfect_number_list,
         5: words_check
