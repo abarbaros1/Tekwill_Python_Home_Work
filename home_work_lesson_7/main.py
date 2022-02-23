@@ -59,7 +59,7 @@ def perfect_number_list():
     print(f'Your perfect number list is {perf_num_list}')
 
 
-# Ex 4 partially done
+# Ex 4
 def words_check():
     import string
     text_input = input("Add yuor text here").lower()
