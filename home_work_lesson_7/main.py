@@ -29,7 +29,7 @@ def prime_num():
         print(my_prime_number, "not a prime number")
 
 
-# Ex 3.0
+# Ex 3.0 used for 3.1 and 3.2
 def perf_num_check_arg(perf_num):
     perf_num_check = int(perf_num)
     sum = 0
@@ -87,10 +87,13 @@ def words_check():
                 punctuation_dict.update({simbol: 1})
                 punctuation_set.add(simbol)
 
+    t_v = list(text_dict.values())
+    p_v = list(punctuation_dict.values())
+
     print(f'Set of words used in text {text_set}')
     print(f'Set of symbols used in text {punctuation_set}')
-    print(f'Count of the most commonly used words {text_dict}')
-    print(f'Count of the most commonly used punctuation{punctuation_dict}')
+    print(f'Count of the most commonly used words  {max(t_v)}')
+    print(f'Count of the most commonly used punctuation  {max(p_v)}')
 
 
 
