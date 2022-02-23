@@ -29,17 +29,7 @@ def prime_num():
         print(my_prime_number, "not a prime number")
 
 
-
-# Ex 3.1
-def perfect_number_check():
-    perf_num_check = int(input("Add you number to check if its perfect"))
-    sum = 0
-    for element in range(1, perf_num_check):
-        if perf_num_check % element == 0:
-            sum += element
-    print(sum == perf_num_check)
-
-# Ex 3.2.0
+# Ex 3.0
 def perf_num_check_arg(perf_num):
     perf_num_check = int(perf_num)
     sum = 0
@@ -49,7 +39,14 @@ def perf_num_check_arg(perf_num):
     return sum == perf_num_check
 
 
-# Ex 3.2.1
+# Ex 3.1
+def perfect_number_check():
+    perf_num_check = int(input("Add you number to check if its perfect"))
+    perf_num_check_arg(perf_num_check)
+    print(perf_num_check_arg(perf_num_check))
+
+
+# Ex 3.2
 def perfect_number_list():
     perf_num = int(input("Add amount of perfect numbers you need "))
     per_num_count = 0
