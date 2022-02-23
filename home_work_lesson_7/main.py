@@ -42,17 +42,18 @@ def perfect_number_check():
 
 # Ex 3.2
 def perfect_number_list():
-    perf_num = int(input("Add you number to check if its perfect and get its positive divisors"))
+    perf_num = int(input("Add amount of numbers to be checked "))
+    per_num_count = 0
     perf_num_list = list()
-    sum = 0
-    for element in range(1, perf_num):
-        if perf_num % element == 0:
-            sum += element
-            perf_num_list.append(element)
-    if sum == perf_num:
-        print(f'positive divisors of perfect number {perf_num} are {perf_num_list}')
-    else:
-        print(f' {perf_num} is not perfect number')
+    i_num = 0
+    while perf_num < len(perf_num_list):
+        if perfect_number_check(i_num):
+            perf_num_list.append(i_num)
+        i_num += 1
+    print(f'Your perfect number list is {perf_num_list}')
+
+
+perfect_number_list()
 
 
 
@@ -70,21 +71,21 @@ def text_check():
     my_text_set = set(my_text_new.split())
     print(f'Punctuation ste {punctuation_set}')
     print(f'Words set {my_text_set}')
-
-if __name__ == '__main__':
-    # We can store the functions as values in a dict
-    exercises_map = {
-        1: palindrome,
-        2: prime_num,
-        3: perfect_number_check,
-        4: perfect_number_list,
-        5: text_check
-    }
-    print('Type the number of the exercise to test:')
-    print('1: Palindrome exercise')
-    print('2: Prime number exercise')
-    print('3: Perfect number check')
-    print('4: Perfect number list')
-    print('5: Text words and punctuation')
-    ex_nr = int(input('Exercise number: '))
-    exercises_map[ex_nr]()  # Executing the function at the selected number
+#
+# if __name__ == '__main__':
+#     # We can store the functions as values in a dict
+#     exercises_map = {
+#         1: palindrome,
+#         2: prime_num,
+#         3: perfect_number_check,
+#         4: perfect_number_list,
+#         5: text_check
+#     }
+#     print('Type the number of the exercise to test:')
+#     print('1: Palindrome exercise')
+#     print('2: Prime number exercise')
+#     print('3: Perfect number check')
+#     print('4: Perfect number list')
+#     print('5: Text words and punctuation')
+#     ex_nr = int(input('Exercise number: '))
+#     exercises_map[ex_nr]()  # Executing the function at the selected number
