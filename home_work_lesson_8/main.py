@@ -53,7 +53,6 @@ def new_write_read_file():
 
 import json
 
-
 def read_dishes_form_file():
     try:
         file = open('dishes.json', 'r')
