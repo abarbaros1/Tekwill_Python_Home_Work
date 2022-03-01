@@ -18,31 +18,36 @@ def fib_test():
 #Ex 2 partial
 import json
 
+def open_read_load(file_name,mode):
+    try:
+        file = open(file_name, mode)
+        data = file.read()
+        data_list = json.loads(data)
+    except FileNotFoundError:
+        data_list =[]
+    return data_list
+
 def list_names():
     try:
-        file = open('employee_list.json', 'r')
-        data = file.read()
-        names = json.loads(data)
-        names_list = [el['name'] for el in names]
+        new_list = open_read_load('employee_list.json', 'r')
+        names_list = [el['name'] for el in new_list ]
     except FileNotFoundError:
         names = []
     return names_list
 
+
 def list_positions():
     try:
-        file = open('employee_list.json', 'r')
-        data = file.read()
-        position_names = json.loads(data)
+        position_names = open_read_load('employee_list.json', 'r')
         position_names_list = [el['position'] for el in position_names]
     except FileNotFoundError:
         names = []
     return position_names_list
 
+
 def salary_budget():
     try:
-        file = open('employee_list.json', 'r')
-        data = file.read()
-        employee_list = json.loads(data)
+        employee_list = open_read_load('employee_list.json', 'r')
         salaries_list = [el['salary'] for el in employee_list]
     except FileNotFoundError:
         names = []
