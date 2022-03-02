@@ -11,10 +11,9 @@ class Human:
         return self.first_name + ' ' + self.last_name
 
     def get_age(self):
-
         today = date.today()
         born_date = datetime.strptime(self.date_of_birth, "%d/%m/%Y")
-        age = today.year - born_date.year #- ((today.month, today.day) < (born_date.month, born_date.day))
+        age = today.year - born_date.year - ((today.month, today.day) < (born_date.month, born_date.day))
         return age
 
     def __str__(self):
