@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="216114c9-e218-4dd5-a033-cb06fff5cb62" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/home_work_lesson_10/Human.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home_work_lesson_10/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_work_lesson_10/Pet.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home_work_lesson_10/Human.py" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_lesson_10/Human.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,9 +100,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\PC\PycharmProjects\Tekwill_Home_Work\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/home_work_lesson_10" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="" />
@@ -365,7 +365,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646206609816</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="commit">
+      <created>1646210410485</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1646210410485</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
