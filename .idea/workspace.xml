@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="216114c9-e218-4dd5-a033-cb06fff5cb62" name="Changes" comment="commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home_work_lesson_10/HumanWithPet.py" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_lesson_10/HumanWithPet.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home_work_lesson_10/Pet.py" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_lesson_10/Pet.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home_work_lesson_10/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_lesson_10/main.py" afterDir="false" />
     </list>
@@ -394,7 +393,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646220671134</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="commit">
+      <created>1646221926270</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1646221926270</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

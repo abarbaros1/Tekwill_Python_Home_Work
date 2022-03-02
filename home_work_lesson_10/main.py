@@ -2,7 +2,7 @@ from Pet import Pet
 from Human import Human
 from HumanWithPet import HumanWithPet
 
-pet1 = Pet("Garfield", "Cat", "lasagna")
+pet1 = Pet("Garfield", "cat", "lasagna")
 pet2 = Pet("Kuzea", "Dog", "bones")
 my_human = Human("John", "Doe", "01/01/1998")
 
