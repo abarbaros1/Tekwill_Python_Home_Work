@@ -8,7 +8,7 @@ class Pet:
         if type in pet_types_list:
             self.type = type
         else:
-            self.type = 'Unknown'
+            self.type = 'Unknown type'
 
     def __str__(self):
         return f"{self.type} called {self.name} that loves {self.favourite_food}"
