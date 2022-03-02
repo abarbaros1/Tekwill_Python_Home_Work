@@ -18,5 +18,5 @@ class Human:
         return age
 
     def __str__(self):
-        return f'{self.first_name} {self.last_name} age {get_age(self)}'
+        return f'{self.first_name} {self.last_name} age {self.get_age()}'
 
