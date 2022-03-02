@@ -10,6 +10,7 @@ class HumanWithPet:
     def adopt_new_pet(self, new_pet:Pet):
         self.pets_list.append(new_pet)
 
+
     def give_away_pet(self, away_pet:Pet):
         self.pets_list.remove(away_pet)
 

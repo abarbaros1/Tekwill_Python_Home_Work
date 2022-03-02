@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="216114c9-e218-4dd5-a033-cb06fff5cb62" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/home_work_lesson_10/HumanWithPet.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home_work_lesson_10/Human.py" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_lesson_10/Human.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home_work_lesson_10/HumanWithPet.py" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_lesson_10/HumanWithPet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home_work_lesson_10/Pet.py" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_lesson_10/Pet.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home_work_lesson_10/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_lesson_10/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -182,8 +182,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main (3)" />
-        <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.Pet" />
+        <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.HumanWithPet" />
         <item itemvalue="Python.Human" />
       </list>
@@ -387,7 +387,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646214337925</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="commit">
+      <created>1646220671134</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1646220671134</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
