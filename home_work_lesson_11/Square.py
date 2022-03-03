@@ -17,10 +17,11 @@ class Square(Rectangle):
     def __str__(self):
         return f"{type(self).__name__} has width {self._width} and length {self._length}, with inner color {self._inner_color} and border color {self._border_color} "
 
-# a=Square('red', 'green', 4)
-# print(a)
-# a.set_width(10)
-# print(a)
-# print(a.get_width())
-# a.set_length(15)
-# print(a)
+if __name__ == '__main__':
+    a=Square('red', 'green', 4)
+    print(a)
+    a.set_width(10)
+    print(a)
+    print(a.get_width())
+    a.set_length(15)
+    print(a)

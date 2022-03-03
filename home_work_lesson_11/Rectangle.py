@@ -22,9 +22,10 @@ class Rectangle(Shape):
 
     def __str__(self):
         return f"{type(self).__name__} has width {self._width} and length {self._length}, with inner color {self._inner_color} and border color {self._border_color} "
-#
-# a=Rectangle('red', 'green', 4,5)
-# print(a)
-# a.set_width(10)
-# print(a)
-# print(a.get_width())
+
+if __name__ == '__main__':
+    a=Rectangle('red', 'green', 4,5)
+    print(a)
+    a.set_width(10)
+    print(a)
+    print(a.get_width())

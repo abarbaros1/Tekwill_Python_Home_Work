@@ -19,11 +19,11 @@ class Circle(Shape):
         except Exception as excpt:
             return f'Attributes are missing, return of value is not possible due to {excpt}'
 
-
-# b= Circle('red', 'green',5)
-# print(b)
-# b.set_radius(10)
-# print(b)
-# print(b.get_radius())
+if __name__ == '__main__':
+    b= Circle('red', 'green',5)
+    print(b)
+    b.set_radius(10)
+    print(b)
+    print(b.get_radius())
 
 
