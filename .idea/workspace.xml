@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="216114c9-e218-4dd5-a033-cb06fff5cb62" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/home_work_lesson_11/Circle.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home_work_lesson_11/Shape.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home_work_lesson_11/Circle.py" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_lesson_11/Circle.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -421,7 +420,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646228303090</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="commit">
+      <created>1646293634981</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1646293634982</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
