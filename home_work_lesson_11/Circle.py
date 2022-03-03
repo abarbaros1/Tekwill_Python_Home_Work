@@ -2,19 +2,24 @@ from Shape import Shape
 
 class Circle(Shape):
 
-    def __init__(self, inner_color=None,border_color=None,_radius=None):
-        super().__init__(inner_color,border_color)
+    def __init__(self, _inner_color,_border_color,_radius):
+        super().__init__(_inner_color,_border_color)
         self._radius = _radius
 
-    def get_radius(self,new_radius):
-        self._radius = new_radius
+    def get_radius(self,_radius):
+        self._radius = _radius
+        return self
 
     def __str__(self):
         try:
-            return f"{type(self).__name__} has radius of {self.radius} with inner color {self.inner_color.upper()} and with border color {self.border_color.upper()} "
-        except Exception as excpt :
+            return f"{type(self).__name__} has radius of {self.radius} with inner color {self.inner_color} and with border color {self.border_color} "
+        except Exception as excpt:
             return f'Attributes are missing, return of value is not possible due to {excpt}'
 
-a= Circle()
-a.get_radius(5)
-print(a)
+
+# b= Circle('red', 'green',5)
+# print(b)
+# b.get_radius(10)
+# print(b)
+
+

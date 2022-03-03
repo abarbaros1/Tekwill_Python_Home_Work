@@ -14,7 +14,7 @@ class Shape:
 
     def __str__(self):
         try:
-            return f'{type(self).__name__.upper()} with Inner Color {self._inner_color.upper()} and with Border Color {self._border_color.upper()}'
+            return f'{type(self).__name__} with Inner Color {self._inner_color} and with Border Color {self._border_color}'
         except Exception as excpt:
             return f' Attributes are missing, return of value is not possible due {excpt} '
 # a = Shape()
