@@ -6,7 +6,7 @@ class Circle(Shape):
         super().__init__(_inner_color,_border_color)
         self._radius = _radius
 
-    def set_radius(self,_radius):
+    def set_radius(self,_radius=None):
         self._radius = _radius
         return self
 
