@@ -1,4 +1,26 @@
 class Shape:
-    def __init__(self,inner_color,border_color):
-        self.inner_color = inner_color
-        self.border_color = border_color
+
+    def __init__(self,_inner_color=None,_border_color=None):
+        self._inner_color = _inner_color
+        self._border_color = _border_color
+
+    def set_inner_color(self,new_inner_color):
+        self._inner_color = new_inner_color
+        return self
+
+    def set_border_color(self,new_border_color):
+        self._border_color = new_border_color
+        return self
+
+    def __str__(self):
+        try:
+            return f'{type(self).__name__.upper()} with Inner Color {self._inner_color.upper()} and with Border Color {self._border_color.upper()}'
+        except Exception as excpt:
+            return f' Attributes are missing, return of value is not possible due {excpt} '
+# a = Shape()
+# print(a)
+#
+# a.set_inner_color('white').set_border_color('black')
+# # a.set_border_color('black')
+# print(a)
+
