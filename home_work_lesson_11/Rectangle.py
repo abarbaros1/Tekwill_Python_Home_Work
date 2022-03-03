@@ -20,7 +20,6 @@ class Rectangle(Shape):
     def get_length(self):
         return self._length
 
-
     def __str__(self):
         return f"{type(self).__name__} has width {self._width} and length {self._length}, with inner color {self._inner_color} and border color {self._border_color} "
 
