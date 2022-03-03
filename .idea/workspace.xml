@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="216114c9-e218-4dd5-a033-cb06fff5cb62" name="Changes" comment="commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home_work_lesson_11/Circle.py" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_lesson_11/Circle.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home_work_lesson_11/Rectangle.py" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_lesson_11/Rectangle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home_work_lesson_11/Shape.py" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_lesson_11/Shape.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +49,7 @@
       <recent name="C:\Users\PC\PycharmProjects\Tekwill_Python_Home_Work\home_work_lesson_7" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Circle">
+  <component name="RunManager" selected="Python.Rectangle">
     <configuration name="Circle" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -181,9 +178,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Rectangle" />
         <item itemvalue="Python.Circle" />
         <item itemvalue="Python.Shape" />
-        <item itemvalue="Python.Rectangle" />
         <item itemvalue="Python.main (3)" />
         <item itemvalue="Python.Pet" />
       </list>
@@ -450,7 +447,21 @@
       <option name="project" value="LOCAL" />
       <updated>1646321203400</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="commit">
+      <created>1646322034141</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1646322034141</updated>
+    </task>
+    <task id="LOCAL-00038" summary="commit">
+      <created>1646322089896</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1646322089896</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
