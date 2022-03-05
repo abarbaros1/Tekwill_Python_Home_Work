@@ -22,8 +22,6 @@ class ShapeService:
             return f' Attributes are missing, return of value is not possible due {excpt} '
 
 
-    #########################################################################################
-
     @property
     def default_inner_color(self):
         return 'white'
@@ -38,8 +36,8 @@ class ShapeService:
         return new_circle
 
 
-##########################################################################################
 
 x = ShapeService()
-z = x.create_default_circle
-print(z)
+print(x)
+# z = x.create_default_circle
+# print(z)
