@@ -1,7 +1,8 @@
-import Shape from Shape
-import Circle from Circle
-import Rectangle from Rectangle
-import Square from Square
+import Shape
+import Circle
+import Rectangle
+import Square
+
 
 class ShapeService:
     def __init__(self, _inner_color=None, _border_color=None):
@@ -14,7 +15,14 @@ class ShapeService:
         else:
             self._border_color = _border_color
 
-#########################################################################################
+    def __str__(self):
+        try:
+            return f'{type(self).__name__} with Inner Color {self._inner_color} and with Border Color {self._border_color}'
+        except Exception as excpt:
+            return f' Attributes are missing, return of value is not possible due {excpt} '
+
+
+    #########################################################################################
 
     @property
     def default_inner_color(self):
@@ -24,4 +32,14 @@ class ShapeService:
     def default_border_color(self):
         return 'black'
 
+    @staticmethod
+    def create_default_circle(radius):
+        new_circle = Circle(ShapeService.default_inner_color, ShapeService.default_border_color, radius)
+        return new_circle
+
+
 ##########################################################################################
+
+x = ShapeService()
+z = x.create_default_circle
+print(z)
