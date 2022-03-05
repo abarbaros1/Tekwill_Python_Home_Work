@@ -1,13 +1,7 @@
 class Shape:
     def __init__(self, _inner_color=None, _border_color=None):
-        if _inner_color is None:
-            self._inner_color = self.default_inner_color
-        else:
-            self._inner_color = _inner_color
-        if _border_color is None:
-            self._border_color = self.default_border_color
-        else:
-            self._border_color = _border_color
+        self._inner_color = _inner_color
+        self._border_color = _border_color
 
     def set_inner_color(self, new_inner_color=None):
         self._inner_color = new_inner_color
@@ -22,24 +16,6 @@ class Shape:
 
     def get_border_color(self):
         return self._border_color
-#########################################################################################
-
-    @property
-    def default_inner_color(self):
-        return 'white'
-
-    @property
-    def default_border_color(self):
-        return 'black'
-
-##########################################################################################
-
-    @staticmethod
-    def create_default_circle(input_radius):
-        new_circle = Circle( input_radius)
-        return new_circle
-
-##########################################################################################
 
     def __str__(self):
         try:
@@ -48,17 +24,15 @@ class Shape:
             return f' Attributes are missing, return of value is not possible due {excpt} '
 
 if __name__ == '__main__':
-    # a = Shape()
-    # print(a)
-    #
-    # a.set_inner_color('red').set_border_color('green')
-    # # a.set_border_color('black')
-    # print(a)
-    # print(a.get_border_color())
-    # print(a.set_inner_color('orange'))
-    # b = Shape()
-    # print(b)
-    x=5
-    r = x.create_default_circle
-    print(r)
+    a = Shape()
+    print(a)
+
+    a.set_inner_color('red').set_border_color('green')
+    # a.set_border_color('black')
+    print(a)
+    print(a.get_border_color())
+    print(a.set_inner_color('orange'))
+    b = Shape()
+    print(b)
+
 
