@@ -2,15 +2,15 @@ from Rectangle import Rectangle
 from Circle import Circle
 
 class Square(Rectangle):
-    def __init__(self,_inner_color,_border_color, _length):
-        super().__init__(_inner_color,_border_color,_length, _length)
+    def __init__(self, _inner_color, _border_color, _length):
+        super().__init__(_inner_color, _border_color, _length, _length)
 
-    def set_width(self,_width):
+    def set_width(self, _width):
         self._width = _width
         self._length = _width
         # return self
 
-    def set_length(self,_length):
+    def set_length(self, _length):
         self._length = _length
         self._width = _length
         # return self

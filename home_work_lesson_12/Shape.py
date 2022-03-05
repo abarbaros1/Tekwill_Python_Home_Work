@@ -1,22 +1,43 @@
 class Shape:
+    def __init__(self, _inner_color=None, _border_color=None):
+        if _inner_color is None:
+            self._inner_color = self.default_inner_color
+        else:
+            self._inner_color = _inner_color
+        if _border_color is None:
+            self._border_color = self.default_border_color
+        else:
+            self._border_color = _border_color
 
-    def __init__(self,_inner_color=None,_border_color=None):
-        self._inner_color = _inner_color
-        self._border_color = _border_color
-
-    def set_inner_color(self,new_inner_color=None):
+    def set_inner_color(self, new_inner_color=None):
         self._inner_color = new_inner_color
         return self
 
     def get_inner_color(self):
         return self._inner_color
 
-    def set_border_color(self,new_border_color=None):
+    def set_border_color(self, new_border_color=None):
         self._border_color = new_border_color
         return self
 
     def get_border_color(self):
         return self._border_color
+#########################################################################################
+    @property
+    def default_inner_color(self):
+        return 'white'
+
+    @property
+    def default_border_color(self):
+        return 'black'
+
+##########################################################################################
+    @staticmethod
+    def create_default_circle(input_radius):
+        return Circle(default_inner_color, default_border_color, input_radius)
+
+##########################################################################################
+
 
     def __str__(self):
         try:
@@ -28,9 +49,11 @@ if __name__ == '__main__':
     a = Shape()
     print(a)
 
-    a.set_inner_color('white').set_border_color('black')
+    a.set_inner_color('red').set_border_color('green')
     # a.set_border_color('black')
     print(a)
     print(a.get_border_color())
-    print(a.set_inner_color())
+    print(a.set_inner_color('orange'))
+    b = Shape()
+    print(b)
 
