@@ -1,7 +1,7 @@
-import Shape
-import Circle
-import Rectangle
-import Square
+from Shape import Shape
+from Circle import Circle
+from Rectangle import Rectangle
+from Square import Square
 
 
 class ShapeService:
