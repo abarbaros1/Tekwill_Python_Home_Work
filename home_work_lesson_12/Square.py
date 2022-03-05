@@ -25,3 +25,4 @@ if __name__ == '__main__':
     print(a.get_width())
     a.set_length(15)
     print(a)
+    print(a.shape_area)

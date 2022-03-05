@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="216114c9-e218-4dd5-a033-cb06fff5cb62" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/home_work_lesson_12/Circle.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home_work_lesson_12/NumbersList.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home_work_lesson_12/Rectangle.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home_work_lesson_12/Shape.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home_work_lesson_12/Square.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home_work_lesson_12/Circle.py" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_lesson_12/Circle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home_work_lesson_12/Rectangle.py" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_lesson_12/Rectangle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home_work_lesson_12/Square.py" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_lesson_12/Square.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,24 +50,27 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\PC\PycharmProjects\Tekwill_Python_Home_Work\home_work_lesson_12" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\PC\PycharmProjects\Tekwill_Python_Home_Work\home_work_lesson_7" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Test1">
-    <configuration name="Circle" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.Circle (1)">
+    <configuration name="Circle (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\PC\PycharmProjects\Tekwill_Home_Work\venv\Scripts\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/home_work_lesson_11" />
+      <option name="SDK_HOME" value="C:\Users\PC\PycharmProjects\Tekwill_Python_Home_Work\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/home_work_lesson_12" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/home_work_lesson_11/Circle.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/home_work_lesson_12/Circle.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -105,13 +106,13 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\PC\PycharmProjects\Tekwill_Home_Work\venv\Scripts\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/home_work_lesson_11" />
+      <option name="SDK_HOME" value="C:\Users\PC\PycharmProjects\Tekwill_Python_Home_Work\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/home_work_lesson_12" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/home_work_lesson_11/Rectangle.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/home_work_lesson_12/Rectangle.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -126,13 +127,13 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\PC\PycharmProjects\Tekwill_Home_Work\venv\Scripts\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/home_work_lesson_11" />
+      <option name="SDK_HOME" value="C:\Users\PC\PycharmProjects\Tekwill_Python_Home_Work\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/home_work_lesson_12" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/home_work_lesson_11/Square.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/home_work_lesson_12/Square.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -185,11 +186,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Test1" />
-        <item itemvalue="Python.NumbersList" />
-        <item itemvalue="Python.Circle" />
+        <item itemvalue="Python.Circle (1)" />
         <item itemvalue="Python.Square" />
         <item itemvalue="Python.Rectangle" />
+        <item itemvalue="Python.Test1" />
+        <item itemvalue="Python.NumbersList" />
       </list>
     </recent_temporary>
   </component>
@@ -524,7 +525,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646329611869</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="commit">
+      <created>1646471576016</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1646471576016</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
