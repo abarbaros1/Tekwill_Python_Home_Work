@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="216114c9-e218-4dd5-a033-cb06fff5cb62" name="Changes" comment="commit">
-      <change beforePath="$PROJECT_DIR$/home_work_lesson_12/ShapeService.py" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_lesson_12/ShapeService.py" afterDir="false" />
-    </list>
+    <list default="true" id="216114c9-e218-4dd5-a033-cb06fff5cb62" name="Changes" comment="commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -199,13 +197,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1645548059228</updated>
-    </task>
-    <task id="LOCAL-00010" summary="commit">
-      <created>1645612987680</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1645612987680</updated>
     </task>
     <task id="LOCAL-00011" summary="commit">
       <created>1645613117584</created>
@@ -543,7 +534,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646482002725</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="commit">
+      <created>1646482132341</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1646482132341</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
