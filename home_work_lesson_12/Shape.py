@@ -23,6 +23,7 @@ class Shape:
     def get_border_color(self):
         return self._border_color
 #########################################################################################
+
     @property
     def default_inner_color(self):
         return 'white'
@@ -32,12 +33,13 @@ class Shape:
         return 'black'
 
 ##########################################################################################
+
     @staticmethod
     def create_default_circle(input_radius):
-        return Circle(default_inner_color, default_border_color, input_radius)
+        new_circle = Circle( input_radius)
+        return new_circle
 
 ##########################################################################################
-
 
     def __str__(self):
         try:
@@ -46,14 +48,17 @@ class Shape:
             return f' Attributes are missing, return of value is not possible due {excpt} '
 
 if __name__ == '__main__':
-    a = Shape()
-    print(a)
-
-    a.set_inner_color('red').set_border_color('green')
-    # a.set_border_color('black')
-    print(a)
-    print(a.get_border_color())
-    print(a.set_inner_color('orange'))
-    b = Shape()
-    print(b)
+    # a = Shape()
+    # print(a)
+    #
+    # a.set_inner_color('red').set_border_color('green')
+    # # a.set_border_color('black')
+    # print(a)
+    # print(a.get_border_color())
+    # print(a.set_inner_color('orange'))
+    # b = Shape()
+    # print(b)
+    x=5
+    r = x.create_default_circle
+    print(r)
 
