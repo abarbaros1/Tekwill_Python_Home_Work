@@ -36,9 +36,5 @@ class ShapeService:
         return new_circle
 
 
-
-x = ShapeService()
-print(x)
-
-y = create_default_circle(5)
-print(z)
+y = ShapeService.create_default_circle(5)
+print(y)
