@@ -1,4 +1,5 @@
 from Rectangle import Rectangle
+from Circle import Circle
 
 class Square(Rectangle):
     def __init__(self,_inner_color,_border_color, _length):
@@ -26,3 +27,14 @@ if __name__ == '__main__':
     a.set_length(15)
     print(a)
     print(a.shape_area)
+
+    b = Rectangle('red', 'green', 15,15)
+    c = Square('red', 'green', 14)
+    d = Circle('red', 'green', 5)
+    print(b<=c)
+    print(b<d)
+
+    e = b-c
+    print(e)
+    f = c*2
+    print(f)

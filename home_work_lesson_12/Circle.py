@@ -49,6 +49,27 @@ class Circle(Shape):
 ##########################################################################
 ##########################################################################
 
+    def __add__(self, other):
+        if type(other) is not Circle:
+            raise Exception('Addition is only allowed for Circle objects')
+        return Circle(self._inner_color, self._border_color, self._radius + other._radius)
+
+    def __sub__(self, other):
+        if type(other) is not Circle:
+            raise Exception('Subtraction is only allowed for Circle objects')
+        if self._radius - other._radius <= 0:
+            raise Exception('New value of the Radius should not be less than 0')
+        return Circle(self._inner_color, self._border_color, self._radius - other._radius)
+
+    def __mul__(self, other):
+        if type(other) not in [Circle,int, float]:
+            raise Exception('Multiplications is only allowed for Circle and number objects')
+        if type(other) in [int, float]:
+            return Circle(self._inner_color, self._border_color, self._radius * other)
+        return Circle(self._inner_color, self._border_color, self._radius * other._radius)
+
+###########################################################################
+###########################################################################
     def __str__(self):
         try:
             return f"{type(self).__name__} has radius of {self._radius} with inner color {self._inner_color} and with border color {self._border_color} "
@@ -66,5 +87,11 @@ if __name__ == '__main__':
     c =Circle('red', 'green',15)
     d =Circle('red', 'white',20)
     print(c<=d)
+    e = d-c
+    print(e)
+    f= c*d
+    print(f)
+    k=c*2
+    print(k)
 
 
