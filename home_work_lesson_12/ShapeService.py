@@ -39,5 +39,6 @@ class ShapeService:
 
 x = ShapeService()
 print(x)
-# z = x.create_default_circle
-# print(z)
+
+y = create_default_circle(5)
+print(z)
