@@ -83,11 +83,12 @@ class Rectangle(Shape):
 
 
     def __mul__(self, other):
-        if type(other) not in [Rectangle, int, float]:
-            raise Exception('Subtraction is only allowed for Rectangle and number objects')
         if type(other) in [int, float]:
             return Rectangle(self._inner_color,self._border_color, self._width * other, self._length * other)
-        return Rectangle(self._inner_color,  self._border_color, self._width * other._width, self._length * other._length)
+        if isinstance(other, Rectangle):
+            return Rectangle(self._inner_color,  self._border_color, self._width * other._width, self._length * other._length)
+        else:
+            raise Exception('Multiplication is allowed only for Rectangle and number objects')
 
 
 ####################################################################################
@@ -113,3 +114,4 @@ if __name__ == '__main__':
     print(e)
     f = c*10
     print(f)
+
