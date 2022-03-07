@@ -38,3 +38,13 @@ if __name__ == '__main__':
     print(e)
     f = c*2
     print(f)
+
+    a = c*b
+    print(a)
+
+    Square1 = Square("red", "blue", 4)
+    Square2 = Square("brown", "khaki", 25)
+
+    print(Square1+Square2)
+    print(Square1 * 2)
+    print(Square1 * Square2)
