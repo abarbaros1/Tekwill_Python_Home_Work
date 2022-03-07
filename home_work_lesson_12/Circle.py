@@ -94,4 +94,3 @@ if __name__ == '__main__':
     k=c*2
     print(k)
 
-
