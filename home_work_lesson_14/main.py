@@ -38,7 +38,9 @@ def add_new_record():
         qualify_input = input("Add qualify yes or no")
         qualify = qualify_input.lower()
     dict = {'name': name, 'score': score, 'attempts': attempts, 'qualify': qualify}
-    new_students_data_frame = students_data_frame.append(dict, ignore_index=True)
+    #new_students_data_frame = students_data_frame.append(dict, ignore_index=True)
+    dict_data_frame = pd.DataFrame.from_dict([dict], orient='columns')
+    new_students_data_frame = pd.concat([students_data_frame, dict_data_frame], ignore_index=True)
     print(new_students_data_frame)
     #return new_students_data_frame
 
