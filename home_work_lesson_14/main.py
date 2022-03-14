@@ -51,7 +51,7 @@ def remove_by_index():
 def save_to_excel_qualified():
     qualified_df = students_data_frame[students_data_frame['qualify'] == 'yes'][['name','score']]
     qualified_df.to_excel('qualified_students.xlsx', sheet_name='qualified')
-    print('data frame was saved to successfully to qualified_students.xlsx')
+    print('data frame was saved successfully to qualified_students.xlsx')
     #return qualified_df
 
 
