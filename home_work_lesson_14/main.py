@@ -10,7 +10,7 @@ def score_exists():
     student_without_score = students_data_frame[(students_data_frame['score'].isna())]
     #students_data_frame.dropna(subset=['score'])
     print(student_without_score)
-    #return student_with_score
+    #return student_without_score
 
 def score_between():
     min_score = float(input("Add min score"))
