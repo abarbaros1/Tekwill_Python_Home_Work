@@ -6,7 +6,7 @@ students_data_frame = pd.read_excel('homework.xlsx', sheet_name='Exam Results')
 def default_dataframe():
     print(students_data_frame)
 
-def score_exists():
+def wo_score():
     student_without_score = students_data_frame[(students_data_frame['score'].isna())]
     #students_data_frame.dropna(subset=['score'])
     print(student_without_score)
@@ -60,7 +60,7 @@ def save_to_excel_qualified():
 if __name__ == '__main__':
     exercises_map = {
         0: default_dataframe,
-        1: score_exists,
+        1: wo_score,
         2: score_between,
         3: sort_score,
         4: sort_name,
@@ -77,6 +77,7 @@ if __name__ == '__main__':
     print('4: Rows sorted by name')
     print('5: Add new element (result) to the dataframe (values input from console)')
     print('6: Remove results from the dataframe (by index)')
-    print('7: Save a list of all students that qualified, in a separate Excel file called qualified_students.xlsx. \n Only columns name and score should be visible there')
+    print('7: Save a list of all students that qualified, in a separate Excel file called qualified_students.xlsx. '
+          '\n Only columns name and score should be visible there')
     ex_nr = int(input('Exercise number: '))
     exercises_map[ex_nr]()  # Executing the function at the selected number
