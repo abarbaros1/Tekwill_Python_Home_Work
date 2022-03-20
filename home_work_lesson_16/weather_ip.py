@@ -4,14 +4,13 @@ import xmltodict,json
 
 
 def get_location(ip_data):
-    ip = ip_data
-
+    url = ip_data
     headers = {
         'x-rapidapi-host': "ip-geolocation-ipwhois-io.p.rapidapi.com",
         'x-rapidapi-key': "REMOVED"
     }
 
-    response_l = requests.request("GET", ip, headers=headers).text
+    response_l = requests.request("GET", url, headers=headers).text
 
     json_object = json.loads(response_l)
     country = json_object['country']
@@ -23,7 +22,7 @@ def get_location(ip_data):
 # print(get_location('https://ip-geolocation-ipwhois-io.p.rapidapi.com/json/'))
 
 def get_weather():
-    ip_data = "https://ip-geolocation-ipwhois-io.p.rapidapi.com/json/"
+    ip_data = 'http://ipwhois.app/json/'
     weather_region = get_location(ip_data)
 
     url = "https://community-open-weather-map.p.rapidapi.com/weather"
