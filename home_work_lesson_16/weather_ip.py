@@ -1,9 +1,9 @@
 import requests
-import xmltodict,json
-
+import xmltodict, json
 
 
 def get_location(ip_data):
+
     url = ip_data
     headers = {
         'x-rapidapi-host': "ip-geolocation-ipwhois-io.p.rapidapi.com",
