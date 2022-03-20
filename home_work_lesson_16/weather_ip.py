@@ -19,7 +19,7 @@ def get_location(ip_data):
     region = {'country': json_object['country'], 'city': json_object['city'], 'country_code': json_object['country_code'].lower()}
     return region
 
-# print(get_location('https://ip-geolocation-ipwhois-io.p.rapidapi.com/json/'))
+
 
 def get_weather():
     ip_data = 'http://ipwhois.app/json/'
@@ -39,7 +39,6 @@ def get_weather():
     response_w = requests.request("GET", url, headers=headers, params=querystring).text
     json_object_w = json.loads(response_w)
 
-    #print(json_object_w)
     print('Temperature (celsius): ', json_object_w['main']['temp'])
     print('Weather:', json_object_w['weather'][0]['main'])
     print(weather_region['city'], ' ', weather_region['country'])
