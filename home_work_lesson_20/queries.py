@@ -1,4 +1,4 @@
-from sqlalchemy import Table, Column, Integer, String, MetaData, create_engine
+from sqlalchemy import Table, Column, Integer, String, MetaData, create_engine,func
 
 
 # employees that earn more than 10000
@@ -43,16 +43,52 @@ def prj_earn_more_than_thirteen_thousand():
 
 # show the sum of all project budgets by country
 def total_projects_budget():
-    pass
+    engine = create_engine('sqlite:///python_lesson_20.db')
+    meta = MetaData(engine)
+    meta.reflect()
+    projects_table = meta.tables.get('projects')
+
+    with engine.connect() as connection:
+        select_expression = projects_table.select().with_only_columns(
+            [projects_table.c.country, func.sum(projects_table.c.project_budget).label('total')]).group_by(projects_table.c.country)
+        print(select_expression)
+        result = connection.execute(select_expression)
+        for a in result:
+            print(a)
+        single_result = result.fetchone()
+        print(single_result)
+
 
 
 # Show the most expensive project
 def most_expensive_project():
-    pass
+    engine = create_engine('sqlite:///python_lesson_20.db')
+    meta = MetaData(engine)
+    meta.reflect()
+    projects_table = meta.tables.get('projects')
+
+    with engine.connect() as connection:
+        select_expression = projects_table.select().with_only_columns([projects_table.c.name, func.max(projects_table.c.project_budget)])
+        print(select_expression)
+        result = connection.execute(select_expression)
+        single_result = result.fetchall()
+        print(single_result)
+
 
 # Show the year with the most budget
 def max_budget_year():
-    pass
+    engine = create_engine('sqlite:///python_lesson_20.db')
+    meta = MetaData(engine)
+    meta.reflect()
+    projects_table = meta.tables.get('projects')
+
+    with engine.connect() as connection:
+        select_expression = projects_table.select().with_only_columns(
+            [projects_table.c.project_year, func.max(projects_table.c.project_budget)])
+        print(select_expression)
+        result = connection.execute(select_expression)
+        single_result = result.fetchall()
+        print(single_result)
 
 
 # employee (name and last name) managed the projects from the projects table.

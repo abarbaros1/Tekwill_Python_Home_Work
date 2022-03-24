@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="216114c9-e218-4dd5-a033-cb06fff5cb62" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/home_work_lesson_20/add_database_tables.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home_work_lesson_20/add_new_emp_project.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home_work_lesson_20/add_test_emp_project.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home_work_lesson_20/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home_work_lesson_20/queries.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home_work_lesson_20/salary_change.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home_work_lesson_20/queries.py" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_lesson_20/queries.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +56,7 @@
       <recent name="C:\Users\PC\PycharmProjects\Tekwill_Python_Home_Work\home_work_lesson_7" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main (2)">
+  <component name="RunManager" selected="Python.queries">
     <configuration name="add_database_tables" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -190,9 +185,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.queries" />
         <item itemvalue="Python.main (2)" />
         <item itemvalue="Python.add_new_emp_project" />
-        <item itemvalue="Python.queries" />
         <item itemvalue="Python.add_database_tables" />
         <item itemvalue="Python.main (1)" />
       </list>
@@ -206,20 +201,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1645548059228</updated>
-    </task>
-    <task id="LOCAL-00026" summary="commit">
-      <created>1646213723346</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1646213723346</updated>
-    </task>
-    <task id="LOCAL-00027" summary="commit">
-      <created>1646214337925</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1646214337925</updated>
     </task>
     <task id="LOCAL-00028" summary="commit">
       <created>1646220671134</created>
@@ -550,7 +531,21 @@
       <option name="project" value="LOCAL" />
       <updated>1647804764613</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="commit">
+      <created>1648144382211</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1648144382212</updated>
+    </task>
+    <task id="LOCAL-00076" summary="commit">
+      <created>1648144407439</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1648144407439</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
