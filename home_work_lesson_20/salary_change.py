@@ -16,14 +16,17 @@ def increase_salary_to_employee():
     # engine = create_engine('sqlite:///python_lesson_20.db')
     # meta = MetaData(engine)
     # meta.reflect()
-    employees_table = meta.tables.get('employees')
+    try:
+        employees_table = meta.tables.get('employees')
 
-    with engine.connect() as connection:
-        update_statement = employees_table.update().where(
-            (employees_table.c.first_name == add_first_name) & (employees_table.c.last_name == add_last_name)).values(
-            salary=employees_table.c.salary + add_salary)
-        connection.execute(update_statement)
-        print(connection.execute(employees_table.select()).fetchall())
+        with engine.connect() as connection:
+            update_statement = employees_table.update().where(
+                (employees_table.c.first_name == add_first_name) & (employees_table.c.last_name == add_last_name)).values(
+                salary=employees_table.c.salary + add_salary)
+            connection.execute(update_statement)
+            print(connection.execute(employees_table.select()).fetchall())
+    except Exception as exc:
+        print(exc)
 
 ########################################################################################################################
 
@@ -38,13 +41,16 @@ def increase_salary_to_position():
     # engine = create_engine('sqlite:///python_lesson_20.db')
     # meta = MetaData(engine)
     # meta.reflect()
-    employees_table = meta.tables.get('employees')
+    try:
+        employees_table = meta.tables.get('employees')
 
-    with engine.connect() as connection:
-        update_statement = employees_table.update().where(
-            employees_table.c.position == set_position).values(
-            salary=employees_table.c.salary + add_salary)
-        connection.execute(update_statement)
-        print(connection.execute(employees_table.select()).fetchall())
+        with engine.connect() as connection:
+            update_statement = employees_table.update().where(
+                employees_table.c.position == set_position).values(
+                salary=employees_table.c.salary + add_salary)
+            connection.execute(update_statement)
+            print(connection.execute(employees_table.select()).fetchall())
+    except Exception as exc:
+        print(exc)
 
 ########################################################################################################################

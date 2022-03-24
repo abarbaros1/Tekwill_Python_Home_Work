@@ -19,17 +19,20 @@ def add_new_project():
     # engine = create_engine('sqlite:///python_lesson_20.db')
     # meta = MetaData(engine)
     # meta.reflect()
-    projects_table = meta.tables.get('projects')
+    try:
+        projects_table = meta.tables.get('projects')
 
-    with engine.connect() as connection:
-        insert_statement = projects_table.insert(dict(name=new_prj_name,
-                                                      country=new_prj_country,
-                                                      project_lead=new_prj_project_lead,
-                                                      project_budget=new_prj_project_budget,
-                                                      project_year=new_prj_project_year))
-        print(insert_statement)
-        connection.execute(insert_statement)
-        print(connection.execute(projects_table.select()).fetchall())
+        with engine.connect() as connection:
+            insert_statement = projects_table.insert(dict(name=new_prj_name,
+                                                          country=new_prj_country,
+                                                          project_lead=new_prj_project_lead,
+                                                          project_budget=new_prj_project_budget,
+                                                          project_year=new_prj_project_year))
+            print(insert_statement)
+            connection.execute(insert_statement)
+            print(connection.execute(projects_table.select()).fetchall())
+    except Exception as exc:
+        print(exc)
 
 ########################################################################################################################
 
@@ -45,19 +48,19 @@ def add_new_employee():
     new_emp_salary = int(input("Add new employee salary"))
     new_emp_position = input("Add new employee position")
 
-    # engine = create_engine('sqlite:///python_lesson_20.db')
-    # meta = MetaData(engine)
-    # meta.reflect()
-    employees_table = meta.tables.get('employees')
+    try:
+        employees_table = meta.tables.get('employees')
 
-    with engine.connect() as connection:
-        insert_statement = employees_table.insert(dict(idnp=new_emp_idnp,
-                                                       first_name=new_emp_first_name,
-                                                       last_name=new_emp_last_name,
-                                                       salary=new_emp_salary,
-                                                       position=new_emp_position))
-        print(insert_statement)
-        connection.execute(insert_statement)
-        print(connection.execute(employees_table.select()).fetchall())
+        with engine.connect() as connection:
+            insert_statement = employees_table.insert(dict(idnp=new_emp_idnp,
+                                                           first_name=new_emp_first_name,
+                                                           last_name=new_emp_last_name,
+                                                           salary=new_emp_salary,
+                                                           position=new_emp_position))
+            print(insert_statement)
+            connection.execute(insert_statement)
+            print(connection.execute(employees_table.select()).fetchall())
+    except Exception as exc:
+        print(exc)
 
 ########################################################################################################################
