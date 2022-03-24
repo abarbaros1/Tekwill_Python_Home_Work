@@ -22,7 +22,7 @@ def earn_more_than_ten_thousand():
         single_result = result.fetchone()
         print(single_result)
 
-#earn_more_than_ten_thousand()
+
 
 # project managers that earn more than 13000
 def prj_earn_more_than_thirteen_thousand():
@@ -43,7 +43,7 @@ def prj_earn_more_than_thirteen_thousand():
         single_result = result.fetchone()
         print(single_result)
 
-#prj_earn_more_than_thirteen_thousand()
+
 
 # show the sum of all project budgets by country
 def total_projects_budget():

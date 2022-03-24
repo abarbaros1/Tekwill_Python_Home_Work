@@ -31,10 +31,6 @@ def add_new_project():
         connection.execute(insert_statement)
         print(connection.execute(projects_table.select()).fetchall())
 
-
-#add_new_project()
-
-
 ########################################################################################################################
 
 
