@@ -1,6 +1,10 @@
 from sqlalchemy import Table, Column, Integer, String, MetaData, create_engine
 
 
+engine = create_engine('sqlite:///python_lesson_20.db')
+meta = MetaData(engine)
+meta.reflect()
+
 ########################################################################################################################
 # Increase Salary to single Employee
 ########################################################################################################################
@@ -9,9 +13,9 @@ def increase_salary_to_employee():
     add_last_name = input("Add employee last name").capitalize()
     add_salary = int(input("Add to salary"))
 
-    engine = create_engine('sqlite:///python_lesson_20.db')
-    meta = MetaData(engine)
-    meta.reflect()
+    # engine = create_engine('sqlite:///python_lesson_20.db')
+    # meta = MetaData(engine)
+    # meta.reflect()
     employees_table = meta.tables.get('employees')
 
     with engine.connect() as connection:
@@ -31,9 +35,9 @@ def increase_salary_to_position():
     set_position = input("Add employees position for salary increase").capitalize()
     add_salary = float(input("Add to salary"))
 
-    engine = create_engine('sqlite:///python_lesson_20.db')
-    meta = MetaData(engine)
-    meta.reflect()
+    # engine = create_engine('sqlite:///python_lesson_20.db')
+    # meta = MetaData(engine)
+    # meta.reflect()
     employees_table = meta.tables.get('employees')
 
     with engine.connect() as connection:

@@ -1,6 +1,10 @@
 from sqlalchemy import Table, Column, Integer, String, MetaData, create_engine
 
 
+engine = create_engine('sqlite:///python_lesson_20.db')
+meta = MetaData(engine)
+meta.reflect()
+
 ########################################################################################################################
 # Add New Project
 ########################################################################################################################
@@ -12,9 +16,9 @@ def add_new_project():
     new_prj_project_budget = int(input("Add project budget"))
     new_prj_project_year = int(input("Add project Year"))
 
-    engine = create_engine('sqlite:///python_lesson_20.db')
-    meta = MetaData(engine)
-    meta.reflect()
+    # engine = create_engine('sqlite:///python_lesson_20.db')
+    # meta = MetaData(engine)
+    # meta.reflect()
     projects_table = meta.tables.get('projects')
 
     with engine.connect() as connection:
@@ -45,9 +49,9 @@ def add_new_employee():
     new_emp_salary = int(input("Add new employee salary"))
     new_emp_position = input("Add new employee position")
 
-    engine = create_engine('sqlite:///python_lesson_20.db')
-    meta = MetaData(engine)
-    meta.reflect()
+    # engine = create_engine('sqlite:///python_lesson_20.db')
+    # meta = MetaData(engine)
+    # meta.reflect()
     employees_table = meta.tables.get('employees')
 
     with engine.connect() as connection:

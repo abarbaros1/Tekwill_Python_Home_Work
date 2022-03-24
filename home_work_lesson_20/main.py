@@ -6,6 +6,7 @@ from salary_change import increase_salary_to_employee, increase_salary_to_positi
 from queries import *
 
 
+
 if __name__ == '__main__':
     exercises_map = {
         1: create_database_and_tables,

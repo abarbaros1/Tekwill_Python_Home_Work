@@ -1,15 +1,18 @@
 from sqlalchemy import Table, Column, Integer, String, MetaData, create_engine , ForeignKey
 
+engine = create_engine('sqlite:///python_lesson_20.db')
+meta = MetaData(engine)
+meta.reflect()
 
 ########################################################################################################################
 # CREATE Database and Tables
 ########################################################################################################################
 
 def create_database_and_tables():
-    engine = create_engine('sqlite:///python_lesson_20.db', echo=True)
+    #engine = create_engine('sqlite:///python_lesson_20.db', echo=True)
 
     # MetaData object will hold database related information
-    meta = MetaData(engine)
+    #meta = MetaData(engine)
 
     # Add table employees
     employees = Table(
@@ -32,7 +35,7 @@ def create_database_and_tables():
         Column('project_year', Integer)
 
     )
-    meta.create_all()
+    #meta.create_all()
 
 
 

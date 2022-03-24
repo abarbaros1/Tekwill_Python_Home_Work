@@ -1,11 +1,17 @@
 from sqlalchemy import Table, Column, Integer, String, MetaData, create_engine
+
+
+engine = create_engine('sqlite:///python_lesson_20.db')
+meta = MetaData(engine)
+meta.reflect()
+
 ########################################################################################################################
 # Load Test data to employees table
 ########################################################################################################################
 def add_test_employee_data():
-    engine = create_engine('sqlite:///python_lesson_20.db')
-    meta = MetaData(engine)
-    meta.reflect()
+    # engine = create_engine('sqlite:///python_lesson_20.db')
+    # meta = MetaData(engine)
+    # meta.reflect()
     employees_table = meta.tables.get('employees')
 
     with engine.connect() as connection:
@@ -62,9 +68,9 @@ def add_test_employee_data():
 ########################################################################################################################
 
 def add_test_project_data():
-    engine = create_engine('sqlite:///python_lesson_20.db')
-    meta = MetaData(engine)
-    meta.reflect()
+    # engine = create_engine('sqlite:///python_lesson_20.db')
+    # meta = MetaData(engine)
+    # meta.reflect()
     projects_table = meta.tables.get('projects')
 
     with engine.connect() as connection:

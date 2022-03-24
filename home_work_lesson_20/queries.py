@@ -1,11 +1,15 @@
 from sqlalchemy import Table, Column, Integer, String, MetaData, create_engine,func
 
 
+engine = create_engine('sqlite:///python_lesson_20.db')
+meta = MetaData(engine)
+meta.reflect()
+
 # employees that earn more than 10000
 def earn_more_than_ten_thousand():
-    engine = create_engine('sqlite:///python_lesson_20.db')
-    meta = MetaData(engine)
-    meta.reflect()
+    # engine = create_engine('sqlite:///python_lesson_20.db')
+    # meta = MetaData(engine)
+    # meta.reflect()
     employees_table = meta.tables.get('employees')
 
     with engine.connect() as connection:
@@ -22,9 +26,9 @@ def earn_more_than_ten_thousand():
 
 # project managers that earn more than 13000
 def prj_earn_more_than_thirteen_thousand():
-    engine = create_engine('sqlite:///python_lesson_20.db')
-    meta = MetaData(engine)
-    meta.reflect()
+    # engine = create_engine('sqlite:///python_lesson_20.db')
+    # meta = MetaData(engine)
+    # meta.reflect()
     employees_table = meta.tables.get('employees')
 
     with engine.connect() as connection:
@@ -43,9 +47,9 @@ def prj_earn_more_than_thirteen_thousand():
 
 # show the sum of all project budgets by country
 def total_projects_budget():
-    engine = create_engine('sqlite:///python_lesson_20.db')
-    meta = MetaData(engine)
-    meta.reflect()
+    # engine = create_engine('sqlite:///python_lesson_20.db')
+    # meta = MetaData(engine)
+    # meta.reflect()
     projects_table = meta.tables.get('projects')
 
     with engine.connect() as connection:
@@ -62,9 +66,9 @@ def total_projects_budget():
 
 # Show the most expensive project
 def most_expensive_project():
-    engine = create_engine('sqlite:///python_lesson_20.db')
-    meta = MetaData(engine)
-    meta.reflect()
+    # engine = create_engine('sqlite:///python_lesson_20.db')
+    # meta = MetaData(engine)
+    # meta.reflect()
     projects_table = meta.tables.get('projects')
 
     with engine.connect() as connection:
@@ -77,9 +81,9 @@ def most_expensive_project():
 
 # Show the year with the most budget
 def max_budget_year():
-    engine = create_engine('sqlite:///python_lesson_20.db')
-    meta = MetaData(engine)
-    meta.reflect()
+    # engine = create_engine('sqlite:///python_lesson_20.db')
+    # meta = MetaData(engine)
+    # meta.reflect()
     projects_table = meta.tables.get('projects')
 
     with engine.connect() as connection:
@@ -93,9 +97,9 @@ def max_budget_year():
 
 # employee (name and last name) managed the projects from the projects table.
 def project_manager():
-    engine = create_engine('sqlite:///python_lesson_20.db')
-    meta = MetaData(engine)
-    meta.reflect()
+    # engine = create_engine('sqlite:///python_lesson_20.db')
+    # meta = MetaData(engine)
+    # meta.reflect()
 
     employees_table = meta.tables.get('employees')
     projects_table = meta.tables.get('projects')
